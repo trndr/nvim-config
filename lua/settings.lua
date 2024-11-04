@@ -35,4 +35,14 @@ opt.smartindent = true    -- autoindent new lines
 -----------------------------------------------------------
 -- Colorscheme
 -----------------------------------------------------------
+
+--require("bluloco").setup({
+--  style = "auto",               -- "auto" | "dark" | "light"
+--  transparent = false,
+--  italics = false,
+--  terminal = fn.has("gui_running") == 1, -- bluoco colors are enabled in gui terminals per default.
+--  guicursor   = true,
+--})
 opt.termguicolors = true      -- enable 24-bit RGB colors
+
+--vim.cmd('colorscheme bluloco')

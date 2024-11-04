@@ -77,7 +77,7 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'bashls', 'pyright', 'clangd', 'html', 'tsserver' }
+local servers = { 'bashls', 'pyright', 'clangd', 'html', 'ts_ls' }
 
 -- Set settings for language servers below
 --
@@ -97,3 +97,10 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+--local fn = vim.fn
+--fn.sign_define("DiagnosticSignError", { text = '🆇', texthl = "DiagnosticSignError" })
+--fn.sign_define("DiagnosticSignWarn", { text = '⚠️', texthl = "DiagnosticSignWarn" })
+--fn.sign_define("DiagnosticSignInfo", { text = 'ℹ️', texthl = "DiagnosticSignInfo" })
+--fn.sign_define("DiagnosticSignHint", { text = '', texthl = "DiagnosticSignHint" })
+
